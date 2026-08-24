@@ -13,9 +13,9 @@ def main():
 
 print(main())
 
-## This the character counting thing part of the assessment ##
+## This is the character counting thing part of the assessment ##
 
 def return_characters(string):
     string.lower()
-
-print(string.lower)
+    
+    
