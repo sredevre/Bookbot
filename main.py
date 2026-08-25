@@ -1,1 +1,1 @@
-from stats import main
+from stats import main, return_characters
