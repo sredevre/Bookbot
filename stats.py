@@ -29,3 +29,12 @@ def return_characters(string):
     return letters
 
 print(return_characters(get_book()))
+
+
+def sortation(letters):
+    sorted_list = []
+
+    letters = return_characters()
+
+    for stuff in letters:
+        pass

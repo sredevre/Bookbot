@@ -82,5 +82,5 @@ the **for loop** iterates over the **string** variable and the **.lower()** conv
 
 While iterating over the list **if** and **else** statements decide whether the current letter that it is iterating over is already in the new **letters** dictionary or not, if it is, it adds 1 to the letter counter, or else it creates a completely new entry in the dictionary and starts from 1.
 
-
+# Fourth Function (sortation)
 
