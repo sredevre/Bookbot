@@ -13,12 +13,12 @@ The first function for this project is the **get_book** function.
 
 With this function, the code extracts the book (initally frankenstein) from the users computer to then be used to gain further info.
 
-The function includes:
+## The function includes:
 
 - with open
 - pathname
 - converts the full path into f
-- .read()
+- **.read()**
 - a variable called **string**
 
 to explain this, the with open is used to go into the users computer and extract the book,
@@ -36,7 +36,7 @@ the **string** variable holds the converted string to use later in the code.
 
 The **main()** function is used to get the word count of the whole book.
 
-the function includes:
+## The function includes:
 
 - The previously defined **string** variable
 - A variable named **count**
@@ -65,7 +65,7 @@ for this function, the main idea was to analyse the book and return the number o
 
 this function brought up a few issues, mainly because of small mistakes and forgetting to use the **.lower()** statement which wasted a lot of time trying to fix the code.
 
-the function includes:
+## The function includes:
 
 - An empty dictionary named **letters**
 - A for loop
