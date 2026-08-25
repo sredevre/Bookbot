@@ -13,7 +13,6 @@ def main():
 
 print(main())
 
-<<<<<<< HEAD
 # This is the letter counting thing part of the assessment
 
 
@@ -30,11 +29,3 @@ def return_characters(string):
     return letters
 
 print(return_characters(get_book()))
-=======
-## This is the character counting thing part of the assessment ##
-
-def return_characters(string):
-    string.lower()
-    
-    
->>>>>>> 091c85642a56dd4c962eb59bc675fa32af0676da
