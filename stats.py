@@ -10,9 +10,9 @@ def main():
     string  = get_book()
     count = string.split()
     message = (f"Found {len(count)} total words")
-    return message
+    w_count = len(count)
+    return message, w_count
 
-print(main())
 
 # This is the letter counting part of the assessment
 
@@ -29,20 +29,22 @@ def return_characters(string):
 
     return letters
 
-print(return_characters(get_book()))
-
 # This is the sorting part of the assessment
 
 def sort_on(letters: tuple[str, int]) -> int:
     return letters[1]
 
 
-def chars_dict_to_sorted_list(letters):
-    
-    letters2 = letters:list[tuple[str, int]]
-    return letters2
+def chars_dict_to_sorted_list(letters: dict[str, int]):
 
-    letters = return_characters()
+    sorted_list = []
 
-    for stuff in letters:
-        pass
+    for keys in letters:
+        sorted_list.append((keys, letters[keys]))
+
+    sorted_list = sorted(sorted_list, reverse=True, key=(sort_on))
+
+
+    return sorted_list
+
+print(chars_dict_to_sorted_list(return_characters(get_book())))

@@ -6,6 +6,7 @@ main.py will become the file that will be run in the terminal for submissions.
 
 stats.py is the file with all the code to complete the assessment, it handles the logic of the BookBot.
 
+# Stats.py Work
 
 # First Function (get_book)
 
@@ -84,5 +85,23 @@ While iterating over the list **if** and **else** statements decide whether the 
 
 # Fourth Function (sort_on)
 
+This function is a very small and simpler one compared to the previous and upcoming functions. It contains only two lines. The purpose of this function is to help sort the current dictionary and convert it into the upcoming sorted list.
+
+## The function includes:
+
+- Importing of the **letters** variable
+- Type hints
+- a return variable which indexes the **letters** variable
+
+The function is pretty self explanatory:
+
+ type hints tell python what the expected data type of the variable should be after the function. 
+ 
+ The index seperated the count which will be used in the next function.
+
 # Fifth Function (chars_dict_to_sorted_list)
+
+# Main.py Work
+
+# Sixth Function (print_report)
 
