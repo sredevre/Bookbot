@@ -101,6 +101,12 @@ The function is pretty self explanatory:
 
 # Fifth Function (chars_dict_to_sorted_list)
 
+The first function really starts putting the BookBot together. In this function, the previously returned **letters** variable from the *Return Characters* function gets sorted into a neat and readable version. It gets rid of all the excess junk and sends out a neat list of the letters in a *(tuple, int)* list. 
+
+## The function includes
+
+
+
 # Main.py Work
 
 # Sixth Function (print_report)
