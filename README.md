@@ -1,6 +1,6 @@
 # Starting off
 
-***Project Notebook is at the end of this README***
+<span style="font-size:18px;"> ***Project Notebook is at the end of this README*** </span>
 
 initially, the project is organised into two seperate files, main.py and stats.py
 
