@@ -105,7 +105,19 @@ The first function really starts putting the BookBot together. In this function,
 
 ## The function includes
 
+- An empty list named **sorted_list**
+- A for loop
+- A *.append* inside the for loop (Used double brackets because *.append* requires a single argument)
+- use of the previous **sort_on** function
+- Returning of the new **sorted_list**
 
+To explain the function, the empty **sorted_list** will be used to hold the new neat list of the characters count, replacing the old *Return Characters* function.
+
+The for loop iterates through the **letters** variable which was given by the old *Return Characters* function.
+
+the *.append* tool adds the letters and counts to the new **sorted_list** which returns a clean list. In the *.append*, you may realise that it has two sets of brackets and a set of square brackets, the square brackets it's obvious you need them, but the extra set of normal brackets is because without them, it would be classed as two different arguments, the *.append* can only pass 1, so the extra brackets wrap those two together into one so *.append* works.
+
+the *return* is pretty self explanatory, it returns the new **sorted_list** for use.
 
 # Main.py Work
 
