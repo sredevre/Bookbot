@@ -129,13 +129,13 @@ the *return* is pretty self explanatory, it returns the new **sorted_list** for 
 
 ## IPO Table
 
-|-------|---------|--------|
+
 | Input | Process | Output |
 |-------|---------|--------|
 | Book Text | - Get_book function converts text to string                    |
-|           | - Return Character counts letters, then puts it into a dict    |
-|           | - chars_dict_to_sorted_list converts the dict into a neat list |
-|           | - print_report turns it into a nicely formatted report         |
+              - Return Character counts letters, then puts it into a dict    |
+              - chars_dict_to_sorted_list converts the dict into a neat list |
+              - print_report turns it into a nicely formatted report         |
 ------------------------------------------------------------------------------
 
 ## Design Decisions and Justifications
