@@ -6,15 +6,15 @@ main.py will become the file that will be run in the terminal for submissions.
 
 stats.py is the file with all the code to complete the assessment, it handles the logic of the BookBot.
 
-# Stats.py Work
+## Stats.py Work
 
-# First Function (get_book)
+## First Function (get_book)
 
 The first function for this project is the **get_book** function.
 
 With this function, the code extracts the book (initally frankenstein) from the users computer to then be used to gain further info.
 
-## The function includes:
+### The function includes:
 
 - with open
 - pathname
@@ -33,11 +33,11 @@ the **.read()** function converts the contents of the path into the string
 the **string** variable holds the converted string to use later in the code.
 
 
-# Second Function (main)
+## Second Function (main)
 
 The **main()** function is used to get the word count of the whole book.
 
-## The function includes:
+### The function includes:
 
 - The previously defined **string** variable
 - A variable named **count**
@@ -56,7 +56,7 @@ The **message** variable puts the **count** variable and combines it with text i
 The final output of **message** variable is the finished word count.
 
 
-# Third Function (Return Characters)
+## Third Function (Return Characters)
 
 This one was really painful and time consuming but eventually I got through it
 
@@ -66,7 +66,7 @@ for this function, the main idea was to analyse the book and return the number o
 
 this function brought up a few issues, mainly because of small mistakes and forgetting to use the **.lower()** statement which wasted a lot of time trying to fix the code.
 
-## The function includes:
+### The function includes:
 
 - An empty dictionary named **letters**
 - A for loop
@@ -83,11 +83,11 @@ the **for loop** iterates over the **string** variable and the **.lower()** conv
 
 While iterating over the list **if** and **else** statements decide whether the current letter that it is iterating over is already in the new **letters** dictionary or not, if it is, it adds 1 to the letter counter, or else it creates a completely new entry in the dictionary and starts from 1.
 
-# Fourth Function (sort_on)
+## Fourth Function (sort_on)
 
 This function is a very small and simpler one compared to the previous and upcoming functions. It contains only two lines. The purpose of this function is to help sort the current dictionary and convert it into the upcoming sorted list.
 
-## The function includes:
+### The function includes:
 
 - Importing of the **letters** variable
 - Type hints
@@ -99,11 +99,11 @@ The function is pretty self explanatory:
  
  The index seperated the count which will be used in the next function.
 
-# Fifth Function (chars_dict_to_sorted_list)
+## Fifth Function (chars_dict_to_sorted_list)
 
 The first function really starts putting the BookBot together. In this function, the previously returned **letters** variable from the *Return Characters* function gets sorted into a neat and readable version. It gets rid of all the excess junk and sends out a neat list of the letters in a *(tuple, int)* list. 
 
-## The function includes
+### The function includes
 
 - An empty list named **sorted_list**
 - A for loop
@@ -119,7 +119,8 @@ the *.append* tool adds the letters and counts to the new **sorted_list** which 
 
 the *return* is pretty self explanatory, it returns the new **sorted_list** for use.
 
-# Main.py Work
+## Main.py Work
 
-# Sixth Function (print_report)
+## Sixth Function (print_report)
 
+# Project Notebook
