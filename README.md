@@ -1,6 +1,6 @@
 # Starting off
 
-**Project Notebook is at the end of this README**
+***Project Notebook is at the end of this README***
 
 initially, the project is organised into two seperate files, main.py and stats.py
 
