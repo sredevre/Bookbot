@@ -1,21 +1,15 @@
-## This the first part of the thing ##
+# This the first part of the assessment which opens the book itself
 
-def get_book():
-    with open("/Users/sreevedh/Documents/Bookbot/Bookbot - Computing Project/books/frankenstein.txt") as f:
+def get_book(path):
+    with open(path) as f:
         string = f.read()
+
     return string
-
-
-def main():
-    string  = get_book()
-    count = string.split()
-    message = (f"Found {len(count)} total words")
-    w_count = len(count)
-    return message, w_count
 
 
 # This is the letter counting part of the assessment
 
+# This function counts the letters and puts them into a dictionary
 
 def return_characters(string):
     letters = {}
@@ -29,11 +23,16 @@ def return_characters(string):
 
     return letters
 
+
 # This is the sorting part of the assessment
+
+# Definition of the sort on function to be used for the next function
 
 def sort_on(letters: tuple[str, int]) -> int:
     return letters[1]
 
+
+# This function is used to make the neat clean list by cleaning the messy dictionary
 
 def chars_dict_to_sorted_list(letters: dict[str, int]):
 
@@ -46,5 +45,3 @@ def chars_dict_to_sorted_list(letters: dict[str, int]):
 
 
     return sorted_list
-
-print(chars_dict_to_sorted_list(return_characters(get_book())))

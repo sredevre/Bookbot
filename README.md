@@ -1,6 +1,6 @@
 # Starting off
 
-***Project Notebook is at the end of this README***
+### ***Project Notebook is at the end of this README***
 
 initially, the project is organised into two seperate files, main.py and stats.py
 
@@ -125,21 +125,193 @@ the *return* is pretty self explanatory, it returns the new **sorted_list** for 
 
 ## Sixth Function (print_report)
 
+This function is the final step in making the Bookbot, before all the paths nonsense coming up. This function creates the report by utilising multiple *print* calls.
+
+### This function includes:
+
+- 6 *print* calls to build the report
+- A *for* loop
+- An *if* statement
+- An *f string* inside the *if* statement
+
+To explain this function, we have first the *print* calls. In total there are 6. 5 of them are at the very top, they create the main lines of the report and utilise *f strings* to also bring in the previously defined variables of **path** and **w_count**.
+
+These variables (**path** and **w_count**) were created specifically for this report.
+
+Then the *for* loop iterates over the whole **sorted_list** to bring in the individual items of the list with the *index[0]*, it then uses *.isalpha()* to check whether each of the items is a letter or not. If it is it passes a *True* in the *if* statement, which then gets put into another *f string* which has the sorted letter *(index[0])* and the count of how many times the letter was seen in the book *(index[1])*
+
+The *f string* is then returned and the report has now completed.
+
+## Seventh Function (main - moved back out of stats.py)
+
+It turns out main(), wasn't meant to be in stats.py because it doesn't make sense to have your logic in the stats instead of the actual logic file/
+
+Before *main()* had a word count variable in it, the variable and the code that defines the variable itself stays, but the string that created the **message** variable is now gone.
+
+Now the *main()* function houses the *sys.argv* for the path related code and brings in and defines variables from stats.py.
+
+*sys.argv* allows the Bookbot to use any book path instead of the hardcoded previously used frankenstain.txt. This makes the bookbot more usable, instead of manually changing the path every time you want to analyse a new book, now all you need to do is upload your book into the folder.
+
 # Project Notebook
 
 ## IPO Table
 
 
-| Input | Process | Output |
-|-------|---------|--------|
-| Book Text | - Get_book function converts text to string                    |
-            | - Return Character counts letters, then puts it into a dict    |
-            | - chars_dict_to_sorted_list converts the dict into a neat list |
-            | - print_report turns it into a nicely formatted report         |
-------------------------------------------------------------------------------
+| Input              | Process                                                       | Output                                                                              |
+|--------------------|---------------------------------------------------------------|-------------------------------------------------------------------------------------|
+|      Book Text     | *Get_book* function converts text to string.                    | The books text is converted to a string to be used later in Bookbot                 |
+| Character Counting | *Return_Characters* counts letters, then puts it into a dict.   | The Bookbot reads the string and counts the letters to be used in the next function |
+|    List Creation   | *chars_dict_to_sorted_list* converts the dict into a list. | The counted letters are then formatted into a neat readable list                    |
+| Report Generation  | *print_report* turns it into a nicely formatted report          | The list is turned into a very nice report, leading to better readability           |
 
 ## Design Decisions and Justifications
 
+For this project, most of the code is all functional towards the Bookbot, there isn't much unique code that I have decided to implement to add somewhat of a twist to this Bookbot. Most of the code used is the code that Boot.dev has required in order for the Bookbot to work and to pass the CLI tests.
+
+However throughout the code, there are numerous comments written to brief descriptions of the function uses and to eliminate any confusions.
+
+It also may be noticed that all code has some clear gaps in between functions and lines, this is to keep the code editor looking as neat and decluttered as possible.
+
 ## Test Cases
 
+For this Bookbot, there are three test cases, all of which are provided by boot.dev
+
+There are the books:
+
+- frankenstein.txt
+- mobydick.txt
+- prideandprejudice.txt
+
+The follwing test cases have produced the results as seen below:
+
+### franktenstein.txt
+
+============ BOOKBOT ============                
+Analyzing book found at books/frankenstein.txt...
+
+----------- Word Count ----------                
+Found 75767 total words                          
+--------- Character Count -------                
+e: 44538                                         
+t: 29493                                         
+a: 25894                                         
+o: 24494                                         
+i: 23927                                         
+n: 23643                                         
+s: 20360                                         
+r: 20079                                         
+h: 19176                                         
+d: 16318                                         
+l: 12306                                         
+m: 10206                                         
+u: 10111                                         
+c: 9011                                          
+f: 8451                                          
+y: 7756                                          
+w: 7450                                          
+p: 5952                                          
+g: 5795                                          
+b: 4868                                          
+v: 3737                                          
+k: 1661                                          
+x: 691                                           
+j: 497                                           
+q: 325                                           
+z: 235                                           
+æ: 28                                            
+... output visually truncated      
+
+### mobydick.txt
+
+============ BOOKBOT ============            
+Analyzing book found at books/mobydick.txt...
+
+----------- Word Count ----------            
+Found 215838 total words                     
+--------- Character Count -------            
+e: 119354                                    
+t: 89875                                     
+a: 79224                                     
+o: 70809                                     
+n: 66781                                     
+i: 66675                                     
+s: 65139                                     
+h: 63769                                     
+r: 53593                                     
+l: 43351                                     
+d: 38840                                     
+u: 27204                                     
+m: 23627                                     
+c: 23319                                     
+w: 22557                                     
+g: 21287                                     
+f: 21252                                     
+p: 17874                                     
+y: 17243                                     
+b: 17204                                     
+v: 8725                                      
+k: 8228                                      
+q: 1581                                      
+j: 1177                                      
+x: 1064                                      
+z: 636                                       
+æ: 23                                        
+... output visually truncated           
+
+### prideandprejudice.txt
+
+============ BOOKBOT ============                     
+Analyzing book found at books/prideandprejudice.txt...
+
+----------- Word Count ----------                     
+Found 130410 total words                              
+--------- Character Count -------                     
+e: 74451                                              
+t: 50837                                              
+a: 44834                                              
+o: 43383                                              
+i: 41198                                              
+n: 40686                                              
+h: 36162                                              
+s: 35695                                              
+r: 35168                                              
+d: 23723                                              
+l: 23475                                              
+u: 16303                                              
+m: 15676                                              
+c: 14838                                              
+y: 13579                                              
+w: 13017                                              
+f: 12996                                              
+g: 11007                                              
+b: 9762                                               
+p: 9154                                               
+v: 6118                                               
+k: 3497                                               
+x: 1032                                               
+j: 1014                                               
+z: 971                                                
+q: 660                                                
+ê: 8                                                  
+... output visually truncated   
+
 ## Reflection
+
+Througout this whole Bookbot projects, there have been countless challenges that I have faced throughout the way, this project has required immense dedication and problem solving skills. During the project, even the smallest of mistakes has led to the whole code breaking, making patience a very important skill.
+
+However challenging and annoying it was, the end result was very much worth all this stress.
+
+Throughout the project some challenges I faces included:
+
+- Accidentally pressing a letter which ended up breaking the whole code
+- forgetting small things like brackets when calling a function
+- Lots and lots of revisiting code to create changes
+- Lots of tweaking of original code that worked to make it compatible with new code
+- Revisiting Python throught the Boot.dev spellbook because I forgot some code
+- Not clearly understanding some segments of the assessment (on Boot.dev)
+- The project notebook IPO table...
+- Forgetting and using wrong syntax many times
+
+Although these challenges came up, trial and error was my best choice, eventually it finally was done. 
+
+**This is the finished Bookbot project!**
