@@ -156,13 +156,30 @@ Now the *main()* function houses the *sys.argv* for the path related code and br
 
 ## IPO Table
 
+### Get Book
 
 | Input              | Process                                                       | Output                                                                              |
 |--------------------|---------------------------------------------------------------|-------------------------------------------------------------------------------------|
-|      Book Text     | *Get_book* function converts text to string.                    | The books text is converted to a string to be used later in Bookbot                 |
-| Character Counting | *Return_Characters* counts letters, then puts it into a dict.   | The Bookbot reads the string and counts the letters to be used in the next function |
-|    List Creation   | *chars_dict_to_sorted_list* converts the dict into a list. | The counted letters are then formatted into a neat readable list                    |
-| Report Generation  | *print_report* turns it into a nicely formatted report          | The list is turned into a very nice report, leading to better readability           |
+|      Book Text     | The *Get_book* function converts text from the books path to a string.                    | The books text is converted to a string to be used later in Bookbot                 |
+
+
+### Return Characters
+
+| Input              | Process                                                       | Output                                                                              |
+|--------------------|---------------------------------------------------------------|-------------------------------------------------------------------------------------|
+| Character Counting | The *Return_Characters* function counts letters, then puts it into a dictionary.   | The Bookbot reads the string and counts the letters to be used in the next function |
+
+### chars_dict_to_sorted_list
+
+| Input              | Process                                                       | Output                                                                              |
+|--------------------|---------------------------------------------------------------|-------------------------------------------------------------------------------------|
+|    List Creation   | *chars_dict_to_sorted_list* converts the dictionary into a much nicer looking list. | The counted letters are then formatted into a neat readable list                    |
+### print_report
+
+| Input              | Process                                                       | Output                                                                              |
+|--------------------|---------------------------------------------------------------|-------------------------------------------------------------------------------------|
+| Report Generation  | *print_report* converts the list from the *chars_dict_to_sorted_list* function into a nicely formatted report          | The list is turned into a very nice report, leading to better readability           |
+
 
 ## Design Decisions and Justifications
 
