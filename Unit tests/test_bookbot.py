@@ -21,14 +21,6 @@ def test_return_characters():
 
 def test_chars_dict_to_sorted_list():
     # Tests that the characters are sorted into a proper list
-    result = chars_dict_to_sorted_list({
-        "a": 3,
-        "b": 1,
-        "c": 2
-    })
+    result = chars_dict_to_sorted_list({"a": 3, "b": 1, "c": 2})
 
-    assert result == [
-        ("a", 3),
-        ("c", 2),
-        ("b", 1)
-    ]
+    assert result == [("a", 3), ("c", 2), ("b", 1)]
